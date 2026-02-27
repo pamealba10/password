@@ -1,0 +1,167 @@
+/* Configuración inicial para toda la página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Caja principal que contiene todo */
+.container {
+    background-color: #24243c;
+    color: #e0e0e0;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Estilo del título principal */
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #bb9af7;
+    font-size: 1.8rem;
+}
+
+/* Área donde se muestra la contraseña */
+.password-display {
+    display: flex;
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #3a3a5e;
+    overflow: hidden;
+}
+
+/* El cuadro de texto de la contraseña */
+.password-display input {
+    flex: 1;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    color: #a9a9e0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    outline: none;
+}
+
+/* El botón de copiar */
+.password-display button {
+    background-color: #3a3a5e;
+    border: none;
+    color: white;
+    padding: 0 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.password-display button:hover {
+    background-color: #5a5a8a;
+}
+
+/* Área de configuraciones */
+.settings {
+    margin-bottom: 2rem;
+}
+
+/* Cada opción de configuración */
+.setting {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+}
+
+.setting label {
+    margin-left: 0.8rem;
+    cursor: pointer;
+    flex: 1;
+}
+
+/* Estilo de los checkboxes */
+.setting input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    accent-color: #bb9af7;
+}
+
+/* Estilo del control deslizante */
+.setting input[type="range"] {
+    flex: 1;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/* El número que muestra la longitud */
+#lengthValue {
+    font-weight: bold;
+    color: #bb9af7;
+    margin-left: 0.5rem;
+}
+
+/* Área de fortaleza de la contraseña */
+.strength-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a2e;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+/* Indicador de fortaleza */
+#strengthIndicator {
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    background-color: #2a2a40;
+}
+
+/* Botón principal de generar */
+#generateButton {
+    width: 100%;
+    padding: 1rem;
+    background-color: #bb9af7;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1e1e2f;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#generateButton:hover {
+    background-color: #d0b0ff;
+}
+
+#generateButton:active {
+    transform: scale(0.98);
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 400px) {
+    .container {
+        padding: 1.5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
